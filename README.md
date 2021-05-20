@@ -18,7 +18,7 @@ Cardinal Photos | TBA | macOS, Windows, Linux, mobile (PWA & native) | -
 Cardinal TV & Movies | TBA | macOS, Windows, Linux, mobile (PWA & native) | -
 Cardinal Books | TBA | macOS, Windows, Linux, mobile (PWA & native) | -
 
-## Philosophy
+## Development Philosophy
 
 Cardinal apps embrace a few simple concepts.
 
@@ -32,4 +32,6 @@ Cardinal apps embrace a few simple concepts.
 
 ## Tech Stack
 
-Cardinal apps are built on top of Electron. Cardinal Server takes advantage of Electron multi-processing features for indexing, but the client apps are designed to run either in Electron or a regular browser. Each client app is a response PWA that, when running in Electron, can take advantage of system features (e.g., global keyboard shortcuts and file system access)
+All apps are written in vanilla JavaScript. The JS that runs in Node.js uses CJS packages, and the JS that runs in a browser uses ES6 packages.
+
+Most of the libraries that Cardinal depends on were written specifically for Cardinal and have been open sourced. When possible, Cardinal prefers to rely on first party solutions.
