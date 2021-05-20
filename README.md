@@ -26,7 +26,7 @@ Cardinal apps embrace a few simple concepts.
   - Nothing in the apps is tracked. Nothing is sent to a server. There's no bundled analytics software. No email address or account required. This is modern old school software.
 - **As platformless as possible**
   - Web technology is platformless. It is flexible and accessible. It is modern, fast, and reliable. Cardinal apps are designed to run platformless first, i.e., no native app, instead just running in some web browser. By designing for the web first, mode code covers more platforms.
-  - Native apps are used to wrap the web apps, to provide them with system functionality that web apps don't normally have. Thing like file system access, and access to the media keys on a keyboard, but also less obvious things like multiprocessing.
+  - Native apps are used to wrap the web apps, to provide them with system functionality that web apps don't normally have. Things like file system access, and access to the media keys on a keyboard, but also less obvious things like multiprocessing and better databases.
 - **Offline first**
   - Building on the modern old school approach, Cardinal apps are all designed to work without ever having internet access. Every app can run on 100% local metadata, and there will never be any sort of forced authentication.
 
