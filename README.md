@@ -40,7 +40,7 @@ Most of the libraries that Cardinal depends on were written specifically for Car
 - +7 other first party libraries to be open sourced
 
 ### Third Party Libraries
-- [Electron](https://www.electronjs.org/) - Runs all Cardinal apps on the desktop and provides them with system functionality. Uses Node.js to execute JS in the main process, and the Chromium browser for renderer processes.
+- [Electron](https://www.electronjs.org/) - Runs Cardinal apps on the desktop and provides them with system functionality and multiprocessing.
 - [sqlite3](https://www.npmjs.com/package/sqlite3) - Database driver.
 - [Fastify](https://www.npmjs.com/package/fastify) - HTTP server.
 - [ws.js](https://www.npmjs.com/package/ws) - WebSocket server. Clients use the native `WebSocket` browser API.
@@ -76,3 +76,7 @@ There are currently a few limitations keeping Cardinal in early access.
 The best way to contribute code is to write a [plugin](https://cardinalapps.xyz/plugins). The plugin system is still in development.
 
 All feedback is welcome.
+
+## Licenses
+
+All of the [first party libraries](#first-party-libraries) that were created for Cardinal are licensed under the [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/). The rest of the Cardinal project is distributed as freeware.
