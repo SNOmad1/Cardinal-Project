@@ -44,6 +44,7 @@ Most of the libraries that Cardinal depends on were written specifically for Car
 - [sqlite3](https://www.npmjs.com/package/sqlite3) - Database driver.
 - [Fastify](https://www.npmjs.com/package/fastify) - HTTP server.
 - [ws.js](https://www.npmjs.com/package/ws) - WebSocket server. Clients use the native `WebSocket` browser API.
+- [Swiper](https://swiperjs.com/) - HTML carousels on deskop and mobile.
 
 ## Roadmap
 
