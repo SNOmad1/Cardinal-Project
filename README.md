@@ -26,7 +26,7 @@ The project is under active development and new releases continue. All releases 
 
 All apps are written in vanilla JavaScript. The JS that runs in Node.js uses CJS packages, and the JS that runs in a browser uses ES6 packages. All JS is written to use ES6 features (classes instead of prototypes, async/await, etc).
 
-Most of the libraries that Cardinal depends on were written specifically for Cardinal and have been open sourced. When possible, Cardinal prefers to rely on first party solutions. These are the main dependencies that any Cardinal app uses.
+**Most of the libraries that Cardinal depends on were written specifically for Cardinal and have been open sourced**. When possible, Cardinal prefers to rely on first party solutions and tries to avoid vendor lock-in. These are the main dependencies that any Cardinal app uses:
 
 ### First Party Libraries
 - [Lowrider.js](https://github.com/somebeaver/Lowrider.js) - Better web components.
@@ -45,27 +45,28 @@ Most of the libraries that Cardinal depends on were written specifically for Car
 - [Fastify](https://www.npmjs.com/package/fastify) - HTTP server.
 - [ws.js](https://www.npmjs.com/package/ws) - WebSocket server. Clients use the native `WebSocket` browser API.
 - [Swiper](https://swiperjs.com/) - HTML carousels on deskop and mobile in all apps.
-- [howler.js](https://howlerjs.com/) - HTML5 audio playback in Cardinal Music.
+- [howler.js](https://howlerjs.com/) - HTML5 audio playback in Cardinal Music; gets wrapped by Boogietime.js.
 
 ## Roadmap
 
 **Short term:**
-- Music app mobile PWA
-- More music features and upgrades
+- Music app PWA.
+- More music features and upgrades.
+- More server features and upgrades.
 
 **Medium term:**
-- Photos app
-- `server -> internet -> client` data streaming to remove the LAN-only constraint
+- Photos app release. Development has already begun.
+- `server -> internet -> client` data streaming to remove the LAN-only constraint.
 
 ## Development Philosophy
 
 Cardinal apps embrace a few simple concepts.
 
-- **Privacy above all**
-  - Nothing in the apps is tracked. Nothing is sent to a server. There's no bundled analytics software. No email address or account required. The apps should feel like modern old school software.
 - **As platformless as possible**
   - Web technology is platformless. It is flexible and accessible. It is modern, fast, reliable, and without a corporation gatekeeping an app store. Cardinal apps are designed to run platformless first, i.e., no native app, instead just running in some web browser. By designing for the web first, more code covers more platforms.
-  - Native apps are used to wrap the web apps, to provide them with system functionality that web apps don't normally have. Things like file system access or access to the media keys on a keyboard, but also less obvious things like multiprocessing and better databases.
+  - Native apps are used to wrap the web apps, to provide them with system functionality that web apps don't normally have. File system access, multiprocessing, better databases, and much more.
+- **Privacy above all**
+  - Nothing in the apps is tracked. Nothing is sent to a server. There's no bundled analytics software. No email address or account required. The apps should feel like modern old school software.
 - **Offline first**
   - Building on the modern old school approach, Cardinal apps are all designed around never having internet access. The UI shouldn't feel lacking just because the user doesn't want to download hundreds of artist images or album covers.
 
@@ -74,14 +75,11 @@ Cardinal apps embrace a few simple concepts.
 There are currently a few limitations keeping Cardinal in early access.
 
 - Local Area Network only. Client apps must be on the same LAN as the server app.
-- *By Reference* playback only. The server assumes that the client can access the audio file at the same file path. This limitation will be gone asap.
-- No HTTPS.
+- Linux releases.
 
 ## Contributing
 
-The best way to contribute code is to write a [plugin](https://cardinalapps.xyz/plugins). The plugin system is still in development.
-
-All feedback is welcome.
+The best way to contribute code will be to write a [plugin](https://cardinalapps.xyz/plugins). The plugin system is currently in development.
 
 ## Licenses
 
