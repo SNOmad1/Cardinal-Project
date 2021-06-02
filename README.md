@@ -30,27 +30,32 @@ Most of the libraries that Cardinal depends on were written specifically for Car
 
 ### First Party Libraries
 - [Lowrider.js](https://github.com/somebeaver/Lowrider.js) - Better web components.
-- [double-u](https://github.com/somebeaver/double-u) - DOM manipulations.
+- [cardinal-indexing-service](https://github.com/somebeaver/cardinal-indexing-service) - The service that the server uses to index files.
+- [double-u](https://github.com/somebeaver/double-u) - DOM manipulation.
+- [Bridge.js](https://github.com/somebeaver/Bridge.js) - Client to server HTTP, WebSocket, and IPC communication.
 - [sqleary.js](https://github.com/somebeaver/sqleary.js) - SQL query builder.
 - [router.js](https://github.com/somebeaver/router.js) - UI routing.
 - [html.js](https://github.com/somebeaver/html.js) - HTML file templating.
-- [Boogietime.js](https://github.com/somebeaver/Boogietime.js) - Client audio playback.
-- [Bridge.js](https://github.com/somebeaver/Bridge.js) - Client to server HTTP, WebSocket, and IPC communication.
-- [cardinal-indexing-service](https://github.com/somebeaver/cardinal-indexing-service) - The service that the server uses to index files.
+- [Boogietime.js](https://github.com/somebeaver/Boogietime.js) - Application level audio playback; wraps howler.js.
 - +7 other first party libraries to be open sourced
 
 ### Third Party Libraries
 - [Electron](https://www.electronjs.org/) - Runs Cardinal apps on the desktop and provides them with system functionality and multiprocessing.
-- [sqlite3](https://www.npmjs.com/package/sqlite3) - Database driver.
+- [sqlite3](https://www.npmjs.com/package/sqlite3) - Database driver for server and client apps on the desktop and Docker.
 - [Fastify](https://www.npmjs.com/package/fastify) - HTTP server.
 - [ws.js](https://www.npmjs.com/package/ws) - WebSocket server. Clients use the native `WebSocket` browser API.
-- [Swiper](https://swiperjs.com/) - HTML carousels on deskop and mobile.
+- [Swiper](https://swiperjs.com/) - HTML carousels on deskop and mobile in all apps.
+- [howler.js](https://howlerjs.com/) - HTML5 audio playback in Cardinal Music.
 
 ## Roadmap
 
-**Short term:** Mobile PWA for the music app. HTTP audio streaming by the server (instead of *by reference* playback).
+**Short term:**
+- Music app mobile PWA
+- More music features and upgrades
 
-**Medium term:** Photos app (all platforms), `server -> internet -> client` data streaming to remove the LAN-only constraint and unblock Docker server development.
+**Medium term:**
+- Photos app
+- `server -> internet -> client` data streaming to remove the LAN-only constraint
 
 ## Development Philosophy
 
