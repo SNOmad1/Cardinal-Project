@@ -87,8 +87,8 @@ The server provides a RESTful HTTP API for consuming media data.
 Cardinal apps embrace a few simple concepts.
 
 - **As platformless as possible**
-  - Web technology is platformless. It is flexible and accessible. It is modern, fast, reliable, and without a corporation gatekeeping an app store. Cardinal apps are designed to run platformless first, i.e., no native app, instead just running in some web browser. By designing for the web first, more code covers more platforms.
-  - Native apps are used to wrap the web apps, to provide them with system functionality that web apps don't normally have. File system access, multiprocessing, better databases, and much more.
+  - Web technology is platformless. It is flexible and accessible. It is modern, fast, reliable, and without a corporation gatekeeping an app store. Cardinal apps embrace the web stack, and by designing for the web first, more code covers more platforms.
+  - Native apps are used to progressively enhance the web apps, to provide them with system functionality that web apps don't normally have. File system access, multiprocessing, better databases, and more.
 - **Privacy above all**
   - All apps are free of tracking, marketing, and ads. No "Updgrade Now!" buttons. No paywalled features. No phoning home. No crypto mining. No bundled analytics software. No email address or account required. The apps should feel like modern old school software.
 - **Offline first**
