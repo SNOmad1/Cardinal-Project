@@ -78,7 +78,8 @@ The server provides a RESTful API for consuming media data.
 - More server features and improvements.
 
 **Medium term:**
-- Photos app release.
+- Photos app early access.
+- Server Docker platform support.
 - `server -> internet -> client` data streaming to remove the LAN-only constraint.
 
 ## Development Philosophy
