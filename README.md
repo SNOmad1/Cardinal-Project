@@ -102,7 +102,7 @@ Additionally, apps are Local Area Network only for now. Client apps must be on t
 
 ## Contributing
 
-The best way to contribute code will be to write a [plugin](https://cardinalapps.xyz/plugins). The plugin system is currently in development.
+The best way to contribute code will be to write a [plugin](https://cardinalapps.xyz/plugins). The plugin system is currently in development, check back soon.
 
 ## Licenses
 
