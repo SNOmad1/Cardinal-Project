@@ -54,21 +54,21 @@ For a complete list of dependencies that a Cardinal app uses, click "Open Source
 
 ### Database Layer
 
-The database is powered by sqlite3. Each Electron app gets its own database, although most data lives in the server database. The CRUD functions and the API use plain SQL. For working with queries, [sqleary.js](https://github.com/somebeaver/sqleary.js) was purpose built.
+The database is powered by sqlite3. Each Electron app gets its own database, although the majority of data lives in the server database. CRUD functions and the API use plain SQL. For advanced queries, [sqleary.js](https://github.com/somebeaver/sqleary.js) was purpose built.
 
-The apps also use the [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API).
+The apps also use the [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) in the Electron renderers for simple key-value storage.
 
 ### Presentation Layer
 
 UI's are [single-page applications](https://en.wikipedia.org/wiki/Single-page_application) powered by [Lowrider.js](https://github.com/somebeaver/Lowrider.js) web components. Components are typically designed for a single purpose in single app, but they can also be shared between apps (e.g., the settings panel is shared between all apps).
 
-View routing is handled by [router.js](https://github.com/somebeaver/router.js), which handles the state of the UI and provides browsing functionality. Templates are handled by [html.js](https://github.com/somebeaver/html.js), which implements rudementary templating features like `{{mustache-tags}}`, and nested templates.
+View routing is handled by [router.js](https://github.com/somebeaver/router.js), which handles the state of the UI and provides browsing functionality. Templates are handled by [html.js](https://github.com/somebeaver/html.js), which implements rudimentary templating features like `{{mustache-tags}}`, and nested templates.
 
 ### Networking Layer
 
-The server app uses Fastify for the HTTP server, and ws.js for WebSockets. Media is streamed over the network from the server to the clients, however clients can also play media locally.
+The server app uses Fastify for the HTTP server, and ws.js for WebSockets. Media is streamed over the network from the server to the clients, however clients can also play media locally and report their playback status to the server.
 
-The server provides a RESTful API for consuming media data.
+The server provides a RESTful HTTP API for consuming media data.
 
 ## Roadmap
 
@@ -90,9 +90,9 @@ Cardinal apps embrace a few simple concepts.
   - Web technology is platformless. It is flexible and accessible. It is modern, fast, reliable, and without a corporation gatekeeping an app store. Cardinal apps are designed to run platformless first, i.e., no native app, instead just running in some web browser. By designing for the web first, more code covers more platforms.
   - Native apps are used to wrap the web apps, to provide them with system functionality that web apps don't normally have. File system access, multiprocessing, better databases, and much more.
 - **Privacy above all**
-  - Nothing in the apps is tracked. Nothing is sent to a server. There's no bundled analytics software. No email address or account required. The apps should feel like modern old school software.
+  - All apps are free of tracking, marketing, and ads. No "Updgrade Now!" buttons. No paywalled features. No phoning home. No crypto mining. No bundled analytics software. No email address or account required. The apps should feel like modern old school software.
 - **Offline first**
-  - Building on the modern old school approach, Cardinal apps are all designed around never having internet access. The UI shouldn't feel lacking just because the user doesn't want to download hundreds of artist images or album covers.
+  - Building on the modern old school approach, the apps are designed around never having internet access. The UI's shouldn't feel lacking just because the user doesn't want to download artist images or album covers.
 
 ## Early Access Considerations
 
