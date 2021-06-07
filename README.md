@@ -50,7 +50,7 @@ Everything is written in vanilla JavaScript. The JS that runs in Node.js uses CJ
 - [Swiper](https://swiperjs.com/) - HTML carousels on deskop and mobile in all apps.
 - [howler.js](https://howlerjs.com/) - HTML5 audio playback in Cardinal Music; gets wrapped by Boogietime.js.
 
-For a complete list of dependencies, click "Open Source" in the menu of any Cardinal app.
+For a complete list of dependencies that a Cardinal app uses, click "Open Source" in its menu.
 
 ### Database Layer
 
