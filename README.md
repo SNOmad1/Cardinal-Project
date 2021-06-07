@@ -4,7 +4,7 @@
 
 <h3 align="center">Technical information, discussion, issues, and suggestions for all Cardinal apps.</h3>
 
-[Cardinal](https://cardinalapps.xyz) is an ecosystem of apps for your digital media. Use the server to index your music, photos, TV & movies, and books, and use the various apps to browse your libraries and play back your media.
+[Cardinal](https://cardinalapps.xyz) is an ecosystem of apps for your digital media. Use the Cardinal Server to index your music, photos, TV & movies and books, and use the various apps to browse your libraries and play your media.
 
 ## Apps
 
@@ -20,16 +20,19 @@ Cardinal Books | TBA | macOS, Windows, Linux, mobile (PWA & native) | -
 
 ## Current State
 
-The project is under active development and new releases continue. All releases before v1.0.0 are considered early access. They work and are stable, but lack some of the features necessary to be considered production ready.
+![Generic badge](https://img.shields.io/badge/Status-In&nbsp;Development-brightgreen.svg)
+![Generic badge](https://img.shields.io/badge/Release-Early&nbsp;Access-informational.svg)
+
+The project is under active development and new releases continue. All releases before v1.0.0 are considered early access. They work well, but lack some of the features necessary to be considered production ready. Please see [this section](#early-access-considerations) about early access before making Cardinal your main media platform.
 
 ## Tech Stack
 
-All apps are written in vanilla JavaScript. The JS that runs in Node.js uses CJS packages, and the JS that runs in a browser uses ES6 packages. All JS is written to use ES6 features (classes instead of prototypes, async/await, etc).
+Everything is written in vanilla JavaScript. The JS that runs in Node.js uses CJS packages, and the JS that runs in a browser uses ES6 packages.
 
-**Most of the libraries that Cardinal depends on were written specifically for Cardinal and have been open sourced**. When possible, Cardinal prefers to rely on first party solutions and tries to avoid vendor lock-in. These are the main dependencies that any Cardinal app uses:
+**Most of the libraries that Cardinal depends on were written specifically for Cardinal and have been open sourced**. When possible, Cardinal prefers to rely on first party solutions. These are the main packages that any Cardinal app uses:
 
 ### First Party Libraries
-- [Lowrider.js](https://github.com/somebeaver/Lowrider.js) - Better web components.
+- [Lowrider.js](https://github.com/somebeaver/Lowrider.js) - Enhanced web components.
 - [cardinal-indexing-service](https://github.com/somebeaver/cardinal-indexing-service) - The service that the server uses to index files.
 - [double-u](https://github.com/somebeaver/double-u) - DOM manipulation.
 - [Bridge.js](https://github.com/somebeaver/Bridge.js) - Client to server HTTP, WebSocket, and IPC communication.
@@ -47,15 +50,35 @@ All apps are written in vanilla JavaScript. The JS that runs in Node.js uses CJS
 - [Swiper](https://swiperjs.com/) - HTML carousels on deskop and mobile in all apps.
 - [howler.js](https://howlerjs.com/) - HTML5 audio playback in Cardinal Music; gets wrapped by Boogietime.js.
 
+For a complete list of dependencies, click "Open Source" in the menu of any Cardinal app.
+
+### Database Layer
+
+The database is powered by sqlite3. Each Electron app gets its own database, although most data lives in the server database. The CRUD functions and the API use plain SQL. For working with queries, [sqleary.js](https://github.com/somebeaver/sqleary.js) was purpose built.
+
+The apps also use the [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API).
+
+### Presentation Layer
+
+UI's are [single-page applications](https://en.wikipedia.org/wiki/Single-page_application) powered by [Lowrider.js](https://github.com/somebeaver/Lowrider.js) web components. Components are typically designed for a single purpose in single app, but they can also be shared between apps (e.g., the settings panel is shared between all apps).
+
+View routing is handled by [router.js](https://github.com/somebeaver/router.js), which handles the state of the UI and provides browsing functionality. Templates are handled by [html.js](https://github.com/somebeaver/html.js), which implements rudementary templating features like `{{mustache-tags}}`, and nested templates.
+
+### Networking Layer
+
+The server app uses Fastify for the HTTP server, and ws.js for WebSockets. Media is streamed over the network from the server to the clients, however clients can also play media locally.
+
+The server provides a RESTful API for consuming media data.
+
 ## Roadmap
 
 **Short term:**
 - Music app PWA.
-- More music features and upgrades.
-- More server features and upgrades.
+- More music features and improvements.
+- More server features and improvements.
 
 **Medium term:**
-- Photos app release. Development has already begun.
+- Photos app release.
 - `server -> internet -> client` data streaming to remove the LAN-only constraint.
 
 ## Development Philosophy
@@ -70,12 +93,11 @@ Cardinal apps embrace a few simple concepts.
 - **Offline first**
   - Building on the modern old school approach, Cardinal apps are all designed around never having internet access. The UI shouldn't feel lacking just because the user doesn't want to download hundreds of artist images or album covers.
 
-## Early Access Limitations
+## Early Access Considerations
 
-There are currently a few limitations keeping Cardinal in early access.
+Cardinal apps are early access software, and as such, are subject to breaking changes. There is an effort to ensure that changes impact users as little as possible, however, expect to have to reset your server database before the stable v1.0.0 release. Fortunately, the process to do so is literally just 1 button.
 
-- Local Area Network only. Client apps must be on the same LAN as the server app.
-- Linux releases.
+Additionally, apps are Local Area Network only for now. Client apps must be on the same LAN as the server app. Internet playback is on the (roadmap)[#roadmap], and may be fast-tracked depending on user demand.
 
 ## Contributing
 
