@@ -74,6 +74,7 @@ The server provides a RESTful HTTP API for consuming media data.
 
 **Short term:**
 - Music app PWA.
+- Server full size UI.
 - More music features and improvements.
 - More server features and improvements.
 
@@ -86,13 +87,13 @@ The server provides a RESTful HTTP API for consuming media data.
 
 Cardinal apps embrace a few simple concepts.
 
-- **As platformless as possible**
-  - Web technology is platformless. It is flexible and accessible. It is modern, fast, reliable, and without a corporation gatekeeping an app store. Cardinal apps embrace the web stack, and by designing for the web first, more code covers more platforms.
+- **To be as platformless as possible**
+  - Web technology is platformless, flexible, and accessible. It is modern and fast, and without a corporation gatekeeping an app store. Cardinal apps embrace the web stack, and by designing for the web first, more code covers more platforms.
   - Native apps are used to progressively enhance the web apps, to provide them with system functionality that web apps don't normally have. File system access, multiprocessing, better databases, and more.
 - **Privacy above all**
-  - All apps are free of tracking, marketing, and ads. No "Updgrade Now!" buttons. No paywalled features. No phoning home. No crypto mining. No bundled analytics software. No email address or account required. The apps should feel like modern old school software.
+  - All apps are free of tracking, marketing, and ads. No "Updgrade Now" buttons. No paywalled features. No phoning home. No crypto mining. No bundled analytics software. No email address or account required. The apps should feel like modern old school software.
 - **Offline first**
-  - Building on the modern old school approach, the apps are designed around never having internet access. The UI's shouldn't feel lacking just because the user doesn't want to download artist images or album covers.
+  - The apps are designed around never having internet access. The UI's shouldn't feel lacking just because the user doesn't want to download images or metadata from an online database.
 
 ## Early Access Considerations
 
