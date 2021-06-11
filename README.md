@@ -8,7 +8,7 @@
 
 ## Apps
 
-Items in bold have been released, other items are either in development or planned for the future.
+**Items in bold have been released**, other items are either in development or planned for the future.
 
 Name | Features | Platforms | Releases
 ------------ | ------------ | ------------- | ------------
