@@ -75,7 +75,7 @@ The server provides a RESTful HTTP API for consuming media data.
 **Short term:**
 - Music app PWA.
 - Docker CLI release.
-- Linux desktop release.
+- Linux desktop builds for Server and Music.
 - More music features and improvements.
 - More server features and improvements.
 
