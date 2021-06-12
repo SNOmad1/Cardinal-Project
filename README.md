@@ -74,13 +74,14 @@ The server provides a RESTful HTTP API for consuming media data.
 
 **Short term:**
 - Music app PWA.
+- Docker CLI release.
+- Linux desktop release.
 - More music features and improvements.
 - More server features and improvements.
 
 **Medium term:**
 - Server full size UI.
 - Photos app early access.
-- Server Docker platform support.
 - `server -> internet -> client` data streaming to remove the LAN-only constraint.
 
 ## Development Philosophy
