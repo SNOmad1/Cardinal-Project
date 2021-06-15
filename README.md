@@ -4,7 +4,9 @@
 
 <h3 align="center">Technical information and feedback for all Cardinal apps</h3>
 
-<p align="center">https://cardinalapps.xyz</p>
+[![Cardinal Discord Invite](https://img.shields.io/discord/852722597136433172?color=%237289DA&label=chat&logo=discord&logoColor=white)](https://discord.com/invite/WWXngggPp4)
+![Generic badge](https://img.shields.io/badge/Status-In&nbsp;Development-brightgreen.svg)
+![Generic badge](https://img.shields.io/badge/Release-Early&nbsp;Access-informational.svg)
 
 [Cardinal](https://cardinalapps.xyz) is an ecosystem of apps for your digital media. Use Cardinal Server to index your music, photos, books, and TV & movies, and use the various client apps to browse your libraries and consume your media.
 
@@ -15,15 +17,12 @@
 Name | Features | Platforms | Releases
 ------------ | ------------ | ------------- | ------------
 **Cardinal Server** | [See web page](https://cardinalapps.xyz/en/cardinal-server) | **macOS**, **Windows**, Linux, Docker | [Downloads](https://github.com/somebeaver/Cardinal-Server)
-**Cardinal Music** | [See web page](https://cardinalapps.xyz/en/cardinal-music) | **macOS**, **Windows**, Linux, mobile (PWA & native) | [Downloads](https://github.com/somebeaver/Cardinal-Music)
-Cardinal Photos | TBA | macOS, Windows, Linux, mobile (PWA & native) | -
-Cardinal TV & Movies | TBA | macOS, Windows, Linux, mobile (PWA & native) | -
-Cardinal Books | TBA | macOS, Windows, Linux, mobile (PWA & native) | -
+**Cardinal Music** | [See web page](https://cardinalapps.xyz/en/cardinal-music) | **macOS**, **Windows**, Linux, mobile (PWA) | [Downloads](https://github.com/somebeaver/Cardinal-Music)
+Cardinal Photos | TBA | macOS, Windows, Linux, mobile (PWA) | -
+Cardinal TV & Movies | TBA | macOS, Windows, Linux, mobile (PWA) | -
+Cardinal Books | TBA | macOS, Windows, Linux, mobile (PWA) | -
 
 ## Current State
-
-![Generic badge](https://img.shields.io/badge/Status-In&nbsp;Development-brightgreen.svg)
-![Generic badge](https://img.shields.io/badge/Release-Early&nbsp;Access-informational.svg)
 
 The project is under active development and new releases continue. All releases before v1.0.0 are considered early access. They work well, but lack some of the features necessary to be considered production ready. Please see [this section](#early-access-considerations) about early access before making Cardinal your main media platform.
 
