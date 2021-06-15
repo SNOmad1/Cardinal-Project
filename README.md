@@ -99,9 +99,9 @@ Cardinal apps embrace a few simple concepts.
 
 ## Early Access Considerations
 
-Cardinal apps are early access software, and as such, are subject to breaking changes. There is a conscience effort to ensure that changes impact users as little as possible, however, expect to have to reset your server database before the stable v1.0.0 release. Fortunately, the process to do so is literally just 1 button.
+Cardinal apps are early access software, and as such, are subject to breaking changes. Expect to have to reset your server database before the stable v1.0.0 release. This can be done with 1 button in the UI.
 
-Additionally, apps are Local Area Network only for now. Client apps must be on the same network as the server app. Internet playback is on the [roadmap](#roadmap), and may be fast-tracked depending on user demand.
+Additionally, apps are restricted to the local area network. Client apps must be on the same network as the server app. Internet playback is on the [roadmap](#roadmap), and may be fast-tracked depending on user demand.
 
 ## Contributing
 
