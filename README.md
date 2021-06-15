@@ -4,6 +4,8 @@
 
 <h3 align="center">Technical information and feedback for all Cardinal apps</h3>
 
+<p align="center">https://cardinalapps.xyz</p>
+
 [Cardinal](https://cardinalapps.xyz) is an ecosystem of apps for your digital media. Use Cardinal Server to index your music, photos, books, and TV & movies, and use the various client apps to browse your libraries and consume your media.
 
 ## Apps
