@@ -5,8 +5,8 @@
 <h3 align="center">Technical information and feedback for all Cardinal apps</h3>
 
 [![Cardinal Discord Invite](https://img.shields.io/discord/852722597136433172?color=%237289DA&label=chat&logo=discord&logoColor=white)](https://discord.com/invite/WWXngggPp4)
-![Generic badge](https://img.shields.io/badge/Status-In&nbsp;Development-brightgreen.svg)
-![Generic badge](https://img.shields.io/badge/Release-Early&nbsp;Access-informational.svg)
+[![Generic badge](https://img.shields.io/badge/Status-In&nbsp;Development-brightgreen.svg)](#)
+[![Generic badge](https://img.shields.io/badge/Release-Early&nbsp;Access-informational.svg)](#)
 
 [Cardinal](https://cardinalapps.xyz) is an ecosystem of apps for your digital media. Use Cardinal Server to index your music, photos, books, and TV & movies, and use the various client apps to browse your libraries and consume your media.
 
