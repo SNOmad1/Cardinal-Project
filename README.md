@@ -30,7 +30,7 @@ The project is under active development and new releases continue. All releases 
 
 Everything is written in vanilla JavaScript. The JS that runs in Node.js uses CJS packages, and the JS that runs in a browser uses ES6 packages.
 
-**Most of the libraries that Cardinal depends on were written specifically for Cardinal and have been open sourced**. When possible, Cardinal prefers to rely on first party solutions. These are the main packages that any Cardinal app uses:
+**Many of the libraries that Cardinal depends on were written specifically for Cardinal and have been open sourced.** When possible, Cardinal prefers to rely on first party solutions. Below is a non-exhaustive list of libraries that the apps use:
 
 ### First Party Libraries
 - [Lowrider.js](https://github.com/somebeaver/Lowrider.js) - Enhanced web components.
@@ -41,7 +41,7 @@ Everything is written in vanilla JavaScript. The JS that runs in Node.js uses CJ
 - [router.js](https://github.com/somebeaver/router.js) - UI routing.
 - [html.js](https://github.com/somebeaver/html.js) - HTML file templating.
 - [Boogietime.js](https://github.com/somebeaver/Boogietime.js) - Application level audio playback; wraps howler.js.
-- +7 other first party libraries to be open sourced
+- + more to be open sourced
 
 ### Third Party Libraries
 - [Electron](https://www.electronjs.org/) - Runs Cardinal apps on the desktop and provides them with system functionality and multiprocessing.
