@@ -44,12 +44,12 @@ Everything is written in vanilla JavaScript. The JS that runs in Node.js uses CJ
 - ...and more to be open sourced
 
 ### Third Party Libraries
-- [Electron](https://www.electronjs.org/) - Runs Cardinal apps on the desktop and provides them with system functionality and multiprocessing.
+- [Electron](https://www.electronjs.org/) - Runs Cardinal apps on the desktop and provides them with OS integrations and multiprocessing.
 - [sqlite3](https://www.npmjs.com/package/sqlite3) - Database driver for server and client apps on the desktop and Docker.
 - [Fastify](https://www.npmjs.com/package/fastify) - HTTP server.
 - [ws.js](https://www.npmjs.com/package/ws) - WebSocket server. Clients use the native `WebSocket` browser API.
 - [Swiper](https://swiperjs.com/) - HTML carousels on deskop and mobile in all apps.
-- [howler.js](https://howlerjs.com/) - HTML5 audio playback in Cardinal Music; gets wrapped by Boogietime.js.
+- [howler.js](https://howlerjs.com/) - Audio playback in Cardinal Music; gets wrapped by Boogietime.js.
 
 For a complete list of dependencies that a Cardinal app uses, click "Open Source" in its menu.
 
@@ -61,13 +61,15 @@ The apps also use the [Web Storage API](https://developer.mozilla.org/en-US/docs
 
 ### Presentation Layer
 
-UI's are [single-page applications](https://en.wikipedia.org/wiki/Single-page_application) powered by [Lowrider.js](https://github.com/somebeaver/Lowrider.js) web components. Components are typically designed for a single purpose in single app, but they can also be shared between apps (e.g., the settings panel is shared between all apps).
+The UI is a [single-page application](https://en.wikipedia.org/wiki/Single-page_application) powered by [router.js](https://github.com/somebeaver/Router.js). UI components are [Lowrider.js](https://github.com/somebeaver/Lowrider.js) web components. Components are typically designed for a single purpose in single app, but they can also be shared between apps (e.g., the settings panel is shared between all apps).
 
-View routing is handled by [router.js](https://github.com/somebeaver/router.js), which handles the state of the UI and provides browsing functionality. Templates are handled by [html.js](https://github.com/somebeaver/html.js), which implements rudimentary templating features like `{{mustache-tags}}`, and nested templates.
+Templates are handled by [html.js](https://github.com/somebeaver/html.js), which implements rudimentary templating features like `{{mustache-tags}}`, and nested templates.
+
+Working with the DOM is done with [double-u](https://github.com/somebeaver/double-u), a jQuery inspired library that also provides general purpose front end helpers.
 
 ### Networking Layer
 
-The server app uses Fastify for the HTTP server, and ws.js for WebSockets. Media is streamed over the network from the server to the clients, however clients can also play media locally and report their playback status to the server.
+The server app uses Fastify for the HTTP server, and ws.js for WebSockets. Media is streamed over the network from the server to the clients, but clients can also play media locally and report their playback status to the server.
 
 The server provides a RESTful HTTP API for consuming media data.
 
