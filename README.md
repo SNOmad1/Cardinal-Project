@@ -61,7 +61,9 @@ The apps also use the [Web Storage API](https://developer.mozilla.org/en-US/docs
 
 ### Presentation Layer
 
-The UI is a [single-page application](https://en.wikipedia.org/wiki/Single-page_application) powered by [router.js](https://github.com/somebeaver/Router.js). UI components are [Lowrider.js](https://github.com/somebeaver/Lowrider.js) web components. Components are typically designed for a single purpose in single app, but they can also be shared between apps (e.g., the settings panel is shared between all apps).
+The UI is a single-page application powered by [router.js](https://github.com/somebeaver/Router.js). UI components are [Lowrider.js](https://github.com/somebeaver/Lowrider.js) web components. Components are typically designed for a single purpose in single app, but they can also be shared between apps (e.g., the settings panel is shared between all apps).
+
+The single-page applications are responsive PWAs that are designed to run on desktop, tablets, and smartphones.
 
 Templates are handled by [html.js](https://github.com/somebeaver/html.js), which implements rudimentary templating features like `{{mustache-tags}}`, and nested templates.
 
