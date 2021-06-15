@@ -41,7 +41,7 @@ Everything is written in vanilla JavaScript. The JS that runs in Node.js uses CJ
 - [router.js](https://github.com/somebeaver/router.js) - UI routing.
 - [html.js](https://github.com/somebeaver/html.js) - HTML file templating.
 - [Boogietime.js](https://github.com/somebeaver/Boogietime.js) - Application level audio playback; wraps howler.js.
-- + more to be open sourced
+- ...and more to be open sourced
 
 ### Third Party Libraries
 - [Electron](https://www.electronjs.org/) - Runs Cardinal apps on the desktop and provides them with system functionality and multiprocessing.
