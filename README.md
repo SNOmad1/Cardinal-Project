@@ -77,12 +77,13 @@ The server provides a RESTful HTTP API for consuming media data.
 
 ## Roadmap
 
+**Ongoing**
+- New features and improvements for released apps.
+
 **Short term:**
 - Music app PWA.
-- Docker CLI release.
+- Server Docker CLI release.
 - Linux desktop builds for Server and Music.
-- More music features and improvements.
-- More server features and improvements.
 
 **Medium term:**
 - Server full size UI.
