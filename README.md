@@ -98,7 +98,7 @@ Cardinal apps embrace a few simple concepts.
   - Web technology is platformless, flexible, and accessible. It is modern and fast, and without a corporation gatekeeping an app store. Cardinal apps embrace the web stack, and by designing for the web first, more code covers more platforms.
   - System apps like Electron can be used to progressively enhance the web apps, to provide them with system functionality that web apps don't normally have. File system access, multiprocessing, better databases, and more.
 - **Privacy above all**
-  - All apps are free of tracking, marketing, and ads. No "Updgrade Now" buttons. No paywalled features. No phoning home. No crypto mining. No bundled analytics software. No email address or account required. The apps should feel like modern old school software.
+  - All apps are free of tracking, marketing, and ads. No "Updgrade Now" buttons. No paywalled features. No phoning home. No crypto mining. No bundled analytics software. No email address or account required.
 - **Offline first**
   - The apps are designed around never having internet access. The UI's shouldn't feel lacking just because the user doesn't want to download images or metadata from an online database.
 
