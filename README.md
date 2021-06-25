@@ -12,15 +12,15 @@
 
 ## Apps
 
-**Items in bold have been released**, other items are either in development or planned for the future.
+**Items in bold have been released**, *items in italics are either in development or planned for the future*.
 
 Name | Features | Platforms | Releases
 ------------ | ------------ | ------------- | ------------
 **Cardinal Server** | [See web page](https://cardinalapps.xyz/en/cardinal-server) | **macOS**, **Windows**, Linux, Docker | [Downloads](https://github.com/somebeaver/Cardinal-Server)
 **Cardinal Music** | [See web page](https://cardinalapps.xyz/en/cardinal-music) | **macOS**, **Windows**, Linux, **mobile (web app)** | [Downloads](https://github.com/somebeaver/Cardinal-Music)
-Cardinal Photos | TBA | macOS, Windows, Linux, mobile (web app) | -
-Cardinal TV & Movies | TBA | macOS, Windows, Linux, mobile (web app) | -
-Cardinal Books | TBA | macOS, Windows, Linux, mobile (web app) | -
+*Cardinal Photos* | TBA | macOS, Windows, Linux, mobile (web app) | -
+*Cardinal TV & Movies* | TBA | macOS, Windows, Linux, mobile (web app) | -
+*Cardinal Books* | TBA | macOS, Windows, Linux, mobile (web app) | -
 
 ## Current State
 
