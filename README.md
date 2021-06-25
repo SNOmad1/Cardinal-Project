@@ -67,7 +67,7 @@ Templates are handled by [html.js](https://github.com/somebeaver/html.js), which
 
 Working with the DOM is done with [double-u](https://github.com/somebeaver/double-u), a jQuery inspired library that also provides general purpose front end helpers.
 
-The single-page applications are responsive PWAs that are designed to run on desktop, tablets, and smartphones.
+The single-page applications are responsive web apps that are designed to run on desktop, tablets, and smartphones.
 
 ### Networking Layer
 
