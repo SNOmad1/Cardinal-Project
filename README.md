@@ -17,10 +17,10 @@
 Name | Features | Platforms | Releases
 ------------ | ------------ | ------------- | ------------
 **Cardinal Server** | [See web page](https://cardinalapps.xyz/en/cardinal-server) | **macOS**, **Windows**, Linux, Docker | [Downloads](https://github.com/somebeaver/Cardinal-Server)
-**Cardinal Music** | [See web page](https://cardinalapps.xyz/en/cardinal-music) | **macOS**, **Windows**, Linux, mobile (PWA) | [Downloads](https://github.com/somebeaver/Cardinal-Music)
-Cardinal Photos | TBA | macOS, Windows, Linux, mobile (PWA) | -
-Cardinal TV & Movies | TBA | macOS, Windows, Linux, mobile (PWA) | -
-Cardinal Books | TBA | macOS, Windows, Linux, mobile (PWA) | -
+**Cardinal Music** | [See web page](https://cardinalapps.xyz/en/cardinal-music) | **macOS**, **Windows**, Linux, **mobile (web app)** | [Downloads](https://github.com/somebeaver/Cardinal-Music)
+Cardinal Photos | TBA | macOS, Windows, Linux, mobile (web app) | -
+Cardinal TV & Movies | TBA | macOS, Windows, Linux, mobile (web app) | -
+Cardinal Books | TBA | macOS, Windows, Linux, mobile (web app) | -
 
 ## Current State
 
@@ -28,7 +28,7 @@ The project is under active development and new releases continue. All releases 
 
 ## Tech Stack
 
-Everything is written in vanilla JavaScript. The JS that runs in Node.js uses CJS packages, and the JS that runs in a browser uses ES6 packages.
+Everything is written in vanilla JavaScript.
 
 **Many of the libraries that Cardinal depends on were written specifically for Cardinal and have been open sourced.** When possible, Cardinal prefers to rely on first party solutions. Below is a non-exhaustive list of libraries that the apps use:
 
@@ -81,7 +81,6 @@ The server provides a RESTful HTTP API for consuming media data.
 - New features and improvements for released apps.
 
 **Short term:**
-- Music app PWA.
 - Server Docker CLI release.
 - Linux desktop builds for Server and Music.
 
@@ -95,8 +94,8 @@ The server provides a RESTful HTTP API for consuming media data.
 Cardinal apps embrace a few simple concepts.
 
 - **To be as platformless as possible**
-  - Web technology is platformless, flexible, and accessible. It is modern and fast, and without a corporation gatekeeping an app store. Cardinal apps embrace the web stack, and by designing for the web first, more code covers more platforms.
-  - System apps like Electron can be used to progressively enhance the web apps, to provide them with system functionality that web apps don't normally have. File system access, multiprocessing, better databases, and more.
+  - Web technology is platformless, flexible, accessible, and without a corporation gatekeeping an app store. Cardinal apps embrace the web stack, and by designing for the web first, more code covers more platforms.
+  - Native apps can be used to wrap and progressively enhance the web apps, to provide them with system functionality and features like file system access, multiprocessing, better databases, and more.
 - **Privacy above all**
   - All apps are free of tracking, marketing, and ads. No "Updgrade Now" buttons. No paywalled features. No phoning home. No crypto mining. No bundled analytics software. No email address or account required.
 - **Offline first**
