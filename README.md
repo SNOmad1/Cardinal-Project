@@ -24,7 +24,7 @@ Name | Features | Platforms | Releases
 
 ## Current State
 
-The project is under active development and new releases continue. All releases before v1.0.0 are considered early access. They work well, but lack some of the features necessary to be considered production ready. Please see [this section](#early-access-considerations) about early access before making Cardinal your main media platform.
+The project is in part time development and new releases continue. All releases before v1.0.0 are considered early access. They work well, but lack some of the features necessary to be considered production ready. Please see [this section](#early-access-considerations) about early access before making Cardinal your main media platform.
 
 ## Tech Stack
 
