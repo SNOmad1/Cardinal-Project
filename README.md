@@ -16,8 +16,8 @@
 
 Name | Features | Platforms | Releases
 ------------ | ------------ | ------------- | ------------
-**Cardinal Server** | [See web page](https://cardinalapps.xyz/en/cardinal-server) | **macOS**, **Windows**, *Linux*, *Docker* | [Downloads](https://github.com/somebeaver/Cardinal-Server)
-**Cardinal Music** | [See web page](https://cardinalapps.xyz/en/cardinal-music) | **macOS**, **Windows**, *Linux*, **mobile** (**web**, *native*) | [Downloads](https://github.com/somebeaver/Cardinal-Music)
+**Cardinal Server** | [See web page](https://cardinalapps.xyz/en/cardinal-server) | **macOS**, **Windows**, **Linux**, *Docker* | [Downloads](https://github.com/somebeaver/Cardinal-Server)
+**Cardinal Music** | [See web page](https://cardinalapps.xyz/en/cardinal-music) | **macOS**, **Windows**, **Linux**, **mobile** (**web**, *native*) | [Downloads](https://github.com/somebeaver/Cardinal-Music)
 *Cardinal Photos* | TBA | *macOS*, *Windows*, *Linux*, *mobile* (*web*, *native*) | -
 *Cardinal TV & Movies* | TBA | *macOS*, *Windows*, *Linux*, *mobile* (*web*, *native*) | -
 *Cardinal Books* | TBA | *macOS*, *Windows*, *Linux*, *mobile* (*web*, *native*) | -
