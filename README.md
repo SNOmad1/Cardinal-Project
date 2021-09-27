@@ -81,7 +81,7 @@ The server provides a RESTful HTTP API for consuming media data.
 
 ## Roadmap
 
-**Current**
+**Current:**
 - Server CLI
 - Server for Docker
 - Photos app (React+Redux)
