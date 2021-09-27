@@ -10,6 +10,8 @@
 
 [Cardinal](https://cardinalapps.xyz) is an ecosystem of apps for your digital media. Use Cardinal Server to index your music, photos, books, and TV & movies, and use the various client apps to browse your libraries and consume your media.
 
+Looking for help using Cardinal apps? Join us in [Discord](https://discord.com/invite/WWXngggPp4) or check out the [Help](https://help.cardinalapps.xyz) site.
+
 ## Apps
 
 **Items in bold have been released**, *items in italics are either in development or planned for the future*.
@@ -24,7 +26,9 @@ Name | Features | Platforms | Releases
 
 ## Current State
 
-The project is in part time development and new releases continue. All releases before v1.0.0 are considered early access. Please see [this section](#early-access-considerations) about early access before making Cardinal your main media platform.
+The Server and Music apps have been released using a custom tech stack. It was a fun experiment, but now it's time for a mature front-end stack. The Photos app is currently in development using React+Redux, in parallel with Cardinal's new global component system. The back-end will remain unchanged for now.
+
+There is also a Server CLI app in development, which will be released as a pure CLI app, and as a Docker app.
 
 ## Tech Stack
 
@@ -77,17 +81,20 @@ The server provides a RESTful HTTP API for consuming media data.
 
 ## Roadmap
 
-**Ongoing**
-- New features and improvements for released apps.
+**Current**
+- Photos app (React+Redux)
+- Server CLI
+- Server for Docker
 
-**Short term:**
-- Server Docker CLI release.
-- Linux desktop builds for Server and Music.
+**Medium Term:**
+- Music app React+Redux rewrite
+- Server app React+Redux rewrite
 
-**Medium term:**
-- Server full size UI.
-- Photos app early access.
-- `server -> internet -> client` data streaming to remove the LAN-only constraint.
+**Long Term:**
+- `server -> internet -> client` data streaming to remove the LAN-only constraint
+- React Native mobile apps
+- Cinema app
+- Books app
 
 ## Development Philosophy
 
@@ -107,10 +114,6 @@ Cardinal apps are early access software, and as such, are subject to breaking ch
 
 Additionally, apps are restricted to the local area network. Client apps must be on the same network as the server app. Internet playback is on the [roadmap](#roadmap), and may be fast-tracked depending on user demand.
 
-## Contributing
-
-The best way to contribute code will be to write a [plugin](https://cardinalapps.xyz/plugins). The plugin system is currently in development, check back soon.
-
 ## Licenses
 
-All of the [first party libraries](#first-party-libraries) that were created for Cardinal are open source and licensed under the [Mozilla Public License 2.0](https://choosealicense.com/licenses/mpl-2.0/). The rest of the Cardinal project is distributed as freeware.
+All Cardinal apps are licensed under the GPLv3 software license.
